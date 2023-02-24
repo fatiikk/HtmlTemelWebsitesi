@@ -1,0 +1,36 @@
+<h3 onclick="hamburger()">Site Map</h3>
+
+<hr>
+<ul class="footer-sitemap-list" id="menu">
+<li class="list-item">
+<a href="#" class="list-link ">Anasayfa</a>
+</li>
+<li class="list-item">
+<a href="#" class="list-link">Hakkımızda</a>
+</li>
+<li class="list-item">
+<a href="#" class="list-link">Blog</a>
+</li>
+<li class="list-item">
+<a href="#" class="list-link">Galeri</a>
+</li>
+<li class="list-item">
+<a href="#" class="list-link">İletişim</a>
+</li>
+</ul>
+<script>
+    let status=false;
+    function hamburger(){
+    
+    if(status==false){
+    document.getElementById("menu").style.display="block";
+    status=true;
+    }
+    else if(status==true)
+    {
+    document.getElementById("menu").style.display="none";
+    status=false;
+    }
+    
+    }
+    </script>
